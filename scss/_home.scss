@@ -1,0 +1,91 @@
+.s-hero {
+    width: 100%;
+    max-height: 61.640rem;
+    background: url('../img/fundo-s-hero.svg') no-repeat center center;
+    padding-top: 17rem;
+
+    .container {
+        @include flex (row,flex-start, space-between);
+    }
+
+    .text {
+        width: 100%;
+        max-width: 68.4rem;
+
+        h3 {
+            opacity: 0.8;
+            color: #FFFFFF;
+            padding-bottom: 3.2rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            color: #FFF;
+            margin-bottom: 3.9rem;
+        }
+
+        ul {
+            width: 100%;
+            max-height: 62.1rem;
+            display: flex;
+            align-items: center;
+            margin-top: 6.4rem;
+            padding-bottom: 12rem;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    width: 7.9rem;
+                    height: 5.8rem;
+                    background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0.00) 100%);
+                    border-radius: 50%;
+                    @include flex(row, center, center);
+                    margin-right: 12px;
+                }
+
+                span {
+                    color: #FFF;
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+    }
+
+    .area-image {
+        width: 100%;
+        max-width: 70.6rem;
+        margin-right: -96px;
+        h2 {
+            margin-bottom: 6.7rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            opacity: 0.4;
+            font-weight: 600;
+        }
+        .image {
+            position: relative;
+            width: 100%;
+            height: 54.1rem;
+            img {
+                position: absolute;
+            }
+            .card-front {
+                    top: 4.1rem;
+                    left: 0;
+                    z-index: 2;
+            }
+            .card-back {
+                bottom: 4.6rem;
+                right: 8.6rem;
+                z-index: 1;
+            }
+            .circle {
+                top: 2.8rem;
+                right: 4.3rem;
+            }
+        }
+    }
+}
