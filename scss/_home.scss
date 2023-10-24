@@ -5,7 +5,7 @@
     padding-top: 17rem;
 
     .container {
-        @include flex (row,flex-start, space-between);
+        @include flex (row, flex-start, space-between);
     }
 
     .text {
@@ -58,6 +58,7 @@
         width: 100%;
         max-width: 70.6rem;
         margin-right: -96px;
+
         h2 {
             margin-bottom: 6.7rem;
             text-align: center;
@@ -65,26 +66,103 @@
             opacity: 0.4;
             font-weight: 600;
         }
+
         .image {
             position: relative;
-            width: 100%;
+            top: 35px;
+            width: 111%;
             height: 54.1rem;
+
             img {
                 position: absolute;
             }
+
             .card-front {
-                    top: 4.1rem;
-                    left: 0;
-                    z-index: 2;
+                top: 4.9rem;
+                left: 0;
+                z-index: 2;
             }
+
             .card-back {
-                bottom: 4.6rem;
+                bottom: -1.4rem;
                 right: 8.6rem;
                 z-index: 1;
             }
+
             .circle {
-                top: 2.8rem;
+                top: 0.8rem;
                 right: 4.3rem;
+            }
+        }
+    }
+}
+
+.s-card-neon {
+    padding-top: 12.9rem;
+
+    .left-area {
+        width: 100%;
+        max-width: 27.7rem;
+
+        .ilustra-mockup {
+            position: relative;
+            width: 100%;
+            max-width: 27.7rem;
+            margin-bottom: 13rem;
+
+            .circle-mockup {
+                position: absolute;
+                top: 87px;
+                left: -214px;
+                max-width: 37.7rem;
+                z-index: -1;
+            }
+        }
+    }
+
+    .text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icon {
+            position: relative;
+            &::before {
+                content: "";
+                width: 5px;
+                height: 83px;
+                background: url('../img/pontos-neon.svg') no-repeat center center;
+                position: absolute;
+                top: -104px;
+                left: 50%;
+                margin-left: -2.5px;
+            }
+        }
+        .info-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                text-align: center;
+                margin-top: 3.1rem;
+                color: $grey-600;
+            }
+
+            p {
+                text-align: center;
+                font-size: 1.6rem;
+                color: $grey-400;
+                width: 27.0rem;
+                height: 7.2rem;
+                margin-bottom: 2.6rem;
+            }
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 2.6rem;
+                    }
+                }
             }
         }
     }
