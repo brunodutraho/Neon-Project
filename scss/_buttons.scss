@@ -3,14 +3,13 @@
     display: inline-block;
     border-radius: 12.2rem;
     font-family: 'Poppins', sans-serif;
+    padding: 0 2.6rem;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 100%;
+    line-height: 4.8rem;
 }
 
 .btn-primary {
-    width: 23.4rem;
-    height: 4.8rem;
     background: $brand-yellow;
     color: #855B35;
     transition: background-color .3s;
@@ -21,8 +20,6 @@
 }
 
 .btn-secondary {
-    width: 21.7rem;
-    height: 4.1rem;
     border: 1px solid $brand-light-blue;
     color: $brand-light-blue;
     transition: all .3s;
