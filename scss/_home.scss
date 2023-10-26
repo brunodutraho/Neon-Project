@@ -258,6 +258,7 @@
                 width: 100%;
                 max-width: 38rem;
                 margin-left: 5.9rem;
+
                 h2 {
                     color: #FFFFFF;
                     margin-bottom: 1.1rem;
@@ -289,5 +290,46 @@
             }
         }
 
+    }
+}
+
+.s-depoimentos {
+    padding-top: 13.4rem;
+
+    .top {
+        @include flex(row, flex-end, space-between);
+        margin-bottom: 4rem;
+        
+        h2 {
+            width: 100%;
+
+            span {
+                display: block;
+                color: $grey-200;
+                margin-bottom: 1.4rem;
+            }
+        }
+
+        .swiper-paginador {
+            width: 100%;
+            max-width: 10rem;
+            align-items: end;
+            .swiper-pagination-bullet {
+                background: $brand-yellow;
+                opacity: 0.3;
+                border-radius: 1.2rem;
+                transition: all .3s;
+                &-active {
+                    width: 1.4rem;
+                    background: $brand-yellow;
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .slide-depoimentos {
+        overflow: hidden;
     }
 }

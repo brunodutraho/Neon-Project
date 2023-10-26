@@ -2,14 +2,16 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600;700&display=swap"
-        rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Projeto - Landing Page Neon</title>
 </head>
 
@@ -157,6 +159,95 @@
         </div>
     </section>
 
+    <section class="s-depoimentos">
+        <div class="container">
+            <div class="top">
+                <h2><span>Prático, fácil, moderno</span> Você resolve tudo sem estresse 😊</h2>
+                <div class="swiper-paginador"></div>
+            </div>
+            <div class="slide-depoimentos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-depoimentos">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="img/icon-twitter.svg">
+                            </div>
+                            <p>Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco
+                                #bancoNeon</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimentos">
+                            <div class="user">
+                                <strong>@kleriene18</strong>
+                                <img src="img/icon-twitter.svg">
+                            </div>
+                            <p>Eu uso o Neon pra render o pouquinho que eu tenho. Como disse minha amiga Bruna, um dia
+                                eu abro o app de novo e PA: tô rica.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimentos">
+                            <div class="user">
+                                <strong>@mzltweet</strong>
+                                <img src="img/icon-twitter.svg">
+                            </div>
+                            <p>Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro
+                                cliente.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimentos">
+                            <div class="user">
+                                <strong>@mzltweet</strong>
+                                <img src="img/icon-twitter.svg">
+                            </div>
+                            <p>Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro
+                                cliente.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimentos">
+                            <div class="user">
+                                <strong>@mzltweet</strong>
+                                <img src="img/icon-twitter.svg">
+                            </div>
+                            <p>Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro
+                                cliente.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimentos">
+                            <div class="user">
+                                <strong>@mzltweet</strong>
+                                <img src="img/icon-twitter.svg">
+                            </div>
+                            <p>Só por ter um cartão virtual com bloqueio fácil no app, já ganha e muito na segurançã pro
+                                cliente.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper(".slide-depoimentos", {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            pagination: {
+                el: ".s-depoimentos .top .swiper-paginador",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

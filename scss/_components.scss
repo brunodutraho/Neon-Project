@@ -1,10 +1,10 @@
 .card-depoimentos {
     width: 100%;
-    max-width: 24rem;
-    max-height: 13.0625rem;
+    max-width: 324.667px;
+    height: 12.9rem;
     background-color: rgba(241, 240, 245, 0.55);
     border-radius: 0.5rem;
-    padding: 2.3125rem 2rem 1.4375rem 2rem;
+    padding: 3.7rem 2rem 2.3rem 2rem;
 
     .user {
         @include flex(row, center, space-between);
@@ -13,23 +13,18 @@
         strong {
             color: $grey-500;
             font-family: 'Poppins', sans-serif;
-            font-size: 1.125rem;
+            font-size: 1.8rem;
             font-weight: 600;
             line-height: 112%;
             letter-spacing: -1px;
-        }
-
-        img {
-            width: 1.0771rem;
-            height: 0.875rem;
         }
     }
 
     P {
         color: $grey-400;
-        font-size: 1.125rem;
+        font-size: 1.8rem;
         font-weight: 400;
         line-height: 150%;
-        padding-right: 3.1875rem;
+        padding-right: 5.1rem;
     }
 }
