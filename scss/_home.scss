@@ -299,7 +299,7 @@
     .top {
         @include flex(row, flex-end, space-between);
         margin-bottom: 4rem;
-        
+
         h2 {
             width: 100%;
 
@@ -314,11 +314,13 @@
             width: 100%;
             max-width: 10rem;
             align-items: end;
+
             .swiper-pagination-bullet {
                 background: $brand-yellow;
                 opacity: 0.3;
                 border-radius: 1.2rem;
                 transition: all .3s;
+
                 &-active {
                     width: 1.4rem;
                     background: $brand-yellow;
@@ -331,5 +333,83 @@
 
     .slide-depoimentos {
         overflow: hidden;
+    }
+}
+
+.s-conta-digital {
+    padding-top: 12.7rem;
+    padding-bottom: 18.5rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+        .text {
+            max-width: 54.2rem;
+
+            h2 {
+                color: $grey-600;
+                margin-bottom: 4.5rem;
+                span {
+                    display: block;
+                    color: rgba(198, 197, 206, 0.8);
+                    margin-bottom: 0.9rem;
+                }
+            }
+
+            ul {
+                margin-bottom: 6.5rem;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        margin-bottom: 4.5rem;
+                    }
+
+                    .icon {
+                        width: 4.5rem;
+                        height: 4.5rem;
+                        background-color: $brand-green-light;
+                        border-radius: 0.8rem;
+                        @include flex(row, center, center);
+                        margin-right: 2.6rem;
+                    }
+
+                    .info {
+                        margin-bottom: 0.4rem;
+                        color: $grey-400;
+
+                        p {
+                            font-size: 1.8rem;
+                            line-height: 150%;
+                            color: $grey-300;
+                        }
+                    }
+                }
+            }
+        }
+        .image {
+            position: relative;
+            width: 100%;
+            max-width: 71.2rem;
+            height: 59.8rem;
+            left: 13.9rem;
+            img {
+                position: absolute;
+                &.circle-digital {
+                    bottom: 0;
+                    right: 0;
+                }
+                &.image-digital-01 {
+                    left: 0;
+                    bottom: 5.5rem;
+                }
+                &.image-digital-02 {
+                    top: 0;
+                    right: 23.8rem;
+                }
+            }
+        }
     }
 }
