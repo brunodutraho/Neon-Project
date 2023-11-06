@@ -3,95 +3,96 @@
     max-height: 61.640rem;
     background: url('../img/fundo-s-hero.svg') no-repeat center center;
     padding-top: 17rem;
-
+    display: none;
     .container {
         @include flex (row, flex-start, space-between);
-    }
 
-    .text {
-        width: 100%;
-        max-width: 68.4rem;
 
-        h3 {
-            opacity: 0.8;
-            color: #FFFFFF;
-            padding-bottom: 3.2rem;
-            font-weight: 600;
-        }
-
-        h1 {
-            color: #FFF;
-            margin-bottom: 3.9rem;
-        }
-
-        ul {
+        .text {
             width: 100%;
-            max-height: 62.1rem;
-            display: flex;
-            align-items: center;
-            margin-top: 6.4rem;
-            padding-bottom: 12rem;
+            max-width: 68.4rem;
 
-            li {
+            h3 {
+                opacity: 0.8;
+                color: #FFFFFF;
+                padding-bottom: 3.2rem;
+                font-weight: 600;
+            }
+
+            h1 {
+                color: #FFF;
+                margin-bottom: 3.9rem;
+            }
+
+            ul {
+                width: 100%;
+                max-height: 62.1rem;
                 display: flex;
                 align-items: center;
+                margin-top: 6.4rem;
+                padding-bottom: 12rem;
 
-                .icon {
-                    width: 7.9rem;
-                    height: 5.8rem;
-                    background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0.00) 100%);
-                    border-radius: 50%;
-                    @include flex(row, center, center);
-                    margin-right: 12px;
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        width: 7.9rem;
+                        height: 5.8rem;
+                        background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0.00) 100%);
+                        border-radius: 50%;
+                        @include flex(row, center, center);
+                        margin-right: 12px;
+                    }
+
+                    span {
+                        color: #FFF;
+                        font-size: 1.8rem;
+                    }
                 }
 
-                span {
-                    color: #FFF;
-                    font-size: 1.8rem;
+            }
+        }
+
+        .area-image {
+            width: 100%;
+            max-width: 70.6rem;
+            margin-right: -96px;
+
+            h2 {
+                margin-bottom: 6.7rem;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                opacity: 0.4;
+                font-weight: 600;
+            }
+
+            .image {
+                position: relative;
+                top: 35px;
+                width: 111%;
+                height: 54.1rem;
+
+                img {
+                    position: absolute;
                 }
-            }
 
-        }
-    }
+                .card-front {
+                    top: 4.9rem;
+                    left: 0;
+                    z-index: 2;
+                }
 
-    .area-image {
-        width: 100%;
-        max-width: 70.6rem;
-        margin-right: -96px;
+                .card-back {
+                    bottom: -1.4rem;
+                    right: 8.6rem;
+                    z-index: 1;
+                }
 
-        h2 {
-            margin-bottom: 6.7rem;
-            text-align: center;
-            color: rgba(255, 255, 255, 1);
-            opacity: 0.4;
-            font-weight: 600;
-        }
-
-        .image {
-            position: relative;
-            top: 35px;
-            width: 111%;
-            height: 54.1rem;
-
-            img {
-                position: absolute;
-            }
-
-            .card-front {
-                top: 4.9rem;
-                left: 0;
-                z-index: 2;
-            }
-
-            .card-back {
-                bottom: -1.4rem;
-                right: 8.6rem;
-                z-index: 1;
-            }
-
-            .circle {
-                top: 0.8rem;
-                right: 4.3rem;
+                .circle {
+                    top: 0.8rem;
+                    right: 4.3rem;
+                }
             }
         }
     }
@@ -99,202 +100,206 @@
 
 .s-card-neon {
     padding-top: 12.9rem;
+    display: none;
 
     .container {
         @include flex(row, flex-start, space-between);
-    }
 
-    .left-area {
-        width: 100%;
-        max-width: 27.7rem;
 
-        .ilustra-mockup {
-            position: relative;
+        .left-area {
             width: 100%;
             max-width: 27.7rem;
-            margin-bottom: 13rem;
 
-            .circle-mockup {
-                position: absolute;
-                top: 87px;
-                left: -214px;
-                max-width: 37.7rem;
-                z-index: -1;
-            }
-        }
-
-        .text {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .icon {
+            .ilustra-mockup {
                 position: relative;
+                width: 100%;
+                max-width: 27.7rem;
+                margin-bottom: 13rem;
 
-                &::before {
-                    content: "";
-                    width: 5px;
-                    height: 83px;
-                    background: url('../img/pontos-neon.svg') no-repeat center center;
+                .circle-mockup {
                     position: absolute;
-                    top: -104px;
-                    left: 50%;
-                    margin-left: -2.5px;
+                    top: 87px;
+                    left: -214px;
+                    max-width: 37.7rem;
+                    z-index: -1;
                 }
             }
 
-            .info-text {
+            .text {
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                h3 {
-                    text-align: center;
-                    margin-top: 3.1rem;
-                    color: $grey-600;
+                .icon {
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        width: 5px;
+                        height: 83px;
+                        background: url('../img/pontos-neon.svg') no-repeat center center;
+                        position: absolute;
+                        top: -104px;
+                        left: 50%;
+                        margin-left: -2.5px;
+                    }
                 }
 
-                p {
-                    text-align: center;
-                    font-size: 1.6rem;
-                    color: $grey-400;
-                    width: 27.0rem;
-                    height: 7.2rem;
-                    margin-bottom: 2.6rem;
+                .info-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h3 {
+                        text-align: center;
+                        margin-top: 3.1rem;
+                        color: $grey-600;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 1.6rem;
+                        color: $grey-400;
+                        width: 27.0rem;
+                        height: 7.2rem;
+                        margin-bottom: 2.6rem;
+                    }
+
+                    ul {
+                        li {
+                            &:not(:last-child) {
+                                margin-bottom: 2.6rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        .right-area {
+            width: 100%;
+            max-width: 88rem;
+
+            .main-area {
+                margin-bottom: 14.4rem;
+
+                h2 {
+                    max-width: 48.8rem;
+                    color: $grey-600;
+                    margin-bottom: 4.9rem;
                 }
 
                 ul {
+                    margin-bottom: 3.2rem;
+
                     li {
-                        &:not(:last-child) {
-                            margin-bottom: 2.6rem;
+                        @include flex(row, center, space-between);
+                        border-bottom: 1px solid rgba(225, 224, 231, 0.9);
+                        padding: 3.3rem 0rem;
+
+                        &:first-child {
+                            padding-top: 0;
+                        }
+                    }
+
+                    .info {
+                        display: flex;
+                        align-items: center;
+
+                        .text {
+                            margin-left: 4.3rem;
+
+                            h3 {
+                                color: grey-400;
+                            }
+
+                            p {
+                                font-size: 1.8rem;
+                                line-height: 150%;
+                                color: rgba(122, 119, 134, 1);
+                            }
                         }
                     }
                 }
-            }
 
-        }
-    }
-
-    .right-area {
-        width: 100%;
-        max-width: 88rem;
-
-        .main-area {
-            margin-bottom: 14.4rem;
-
-            h2 {
-                max-width: 48.8rem;
-                color: $grey-600;
-                margin-bottom: 4.9rem;
-            }
-
-            ul {
-                margin-bottom: 3.2rem;
-
-                li {
-                    @include flex(row, center, space-between);
-                    border-bottom: 1px solid rgba(225, 224, 231, 0.9);
-                    padding: 3.3rem 0rem;
-
-                    &:first-child {
-                        padding-top: 0;
-                    }
-                }
-
-                .info {
-                    display: flex;
-                    align-items: center;
-
-                    .text {
-                        margin-left: 4.3rem;
-
-                        h3 {
-                            color: grey-400;
-                        }
-
-                        p {
-                            font-size: 1.8rem;
-                            line-height: 150%;
-                            color: rgba(122, 119, 134, 1);
-                        }
-                    }
-                }
-            }
-
-            .btn {
-                display: inline-block;
-                font-size: 1.6rem;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 500;
-                color: $brand-blue;
-                line-height: 112%;
-                letter-spacing: -0.5px;
-                position: relative;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    right: -1.8rem;
-                    bottom: 0;
-                    width: 1rem;
-                    height: 0.3rem;
-                    background-color: $brand-yellow;
-                }
-            }
-        }
-
-        .box-card {
-            width: 100%;
-            max-width: 80rem;
-            height: 41.0rem;
-            background: url('../img/fundo-pejota.png') no-repeat center center;
-            border-radius: 1.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            .text {
-                width: 100%;
-                max-width: 38rem;
-                margin-left: 5.9rem;
-
-                h2 {
-                    color: #FFFFFF;
-                    margin-bottom: 1.1rem;
-                }
-
-                h3 {
-                    color: #FFF;
-                    max-width: 32.9rem;
-                    margin-bottom: 0.8rem;
-                }
-
-                p {
+                .btn {
+                    display: inline-block;
                     font-size: 1.6rem;
-                    line-height: 150%;
-                    color: #FFFFFF;
-                    margin-bottom: 3.1rem;
-                }
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    color: $brand-blue;
+                    line-height: 112%;
+                    letter-spacing: -0.5px;
+                    position: relative;
 
-                .btns {
-                    display: flex;
-                    align-items: center;
-                    gap: 1.6rem;
-
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: -1.8rem;
+                        bottom: 0;
+                        width: 1rem;
+                        height: 0.3rem;
+                        background-color: $brand-yellow;
+                    }
                 }
             }
 
-            .image {
-                margin-right: -3.1rem;
+            .box-card {
+                width: 100%;
+                max-width: 80rem;
+                height: 41.0rem;
+                background: url('../img/fundo-pejota.png') no-repeat center center;
+                border-radius: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .text {
+                    width: 100%;
+                    max-width: 38rem;
+                    margin-left: 5.9rem;
+
+                    h2 {
+                        color: #FFFFFF;
+                        margin-bottom: 1.1rem;
+                    }
+
+                    h3 {
+                        color: #FFF;
+                        max-width: 32.9rem;
+                        margin-bottom: 0.8rem;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                        margin-bottom: 3.1rem;
+                    }
+
+                    .btns {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.6rem;
+
+                    }
+                }
+
+                .image {
+                    margin-right: -3.1rem;
+                }
             }
+
         }
-
     }
 }
 
 .s-depoimentos {
     padding-top: 13.4rem;
+    display: none;
 
     .top {
         @include flex(row, flex-end, space-between);
@@ -339,6 +344,7 @@
 .s-conta-digital {
     padding-top: 12.7rem;
     padding-bottom: 18.5rem;
+    display: none;
 
     .container {
         display: flex;
@@ -418,136 +424,5 @@
                 }
             }
         }
-    }
-}
-
-footer {
-    background-color: $brand-blue;
-    padding-top: 4.9rem;
-
-    .top {
-        @include flex(row, center, space-between);
-        border-bottom: 1px solid rgba(73, 196, 253, 0.2);
-        padding-bottom: 4.8rem;
-        margin-bottom: 5.7rem;
-
-        .share {
-            display: flex;
-            align-items: center;
-
-            span {
-                font-size: 1.4rem;
-                line-height: 125%;
-                color: #FFFFFF;
-                opacity: 0.7;
-            }
-
-            ul {
-                display: flex;
-                align-items: center;
-                margin-left: 3rem;
-
-                li {
-                    &:not(:first-child) {
-                        margin-left: 3rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .main {
-        @include flex(row, flex-start, space-between);
-        border-bottom: 1px solid rgba(73, 196, 253, 0.2);
-        padding-bottom: 6.2rem;
-        margin-bottom: 3.9rem;
-
-        nav {
-            @include flex(row, flex-start, space-between);
-            width: 100%;
-            max-width: 86rem;
-
-            .item {
-                strong {
-                    color: #FFFFFF;
-                    font-size: 1.6rem;
-                    font-family: "Poppins", sans-serif;
-                    font-weight: 600;
-                    line-height: 125%;
-                    word-wrap: break-word;
-                    display: inline-block;
-                    margin-bottom: 2.5rem;
-                }
-
-                ul {
-                    li {
-                        &:not(:last-child) {
-                            margin-bottom: 2.9rem;
-                        }
-
-                        a {
-                            font-size: 1.4rem;
-                            line-height: 1.7rem;
-                            color: #FFFFFF;
-                            opacity: 0.7;
-                        }
-                    }
-                }
-            }
-        }
-
-        .btns {
-            width: 100%;
-            max-width: 28rem;
-
-            button {
-                width: 100%;
-                height: 7.6rem;
-                background-color: rgba(0, 164, 240, 0.23);
-                border-radius: 6px;
-                display: flex;
-                align-items: center;
-                padding-left: 2.5rem;
-                &:not(:last-child) {
-                    margin-bottom: 2.4rem;
-                }
-                .info {
-                    margin-left: 2.4rem;
-                    strong {
-                        display: block;
-                        text-align: left;
-                        font-weight: bold;
-                        font-size: 1.4rem;
-                        line-height: 150%;
-                        color: #FFFFFF;
-                    }
-                    span {
-                        display: block;
-                        font-size: 1.4rem;
-                        line-height: 150%;
-                        color: #FFFFFF;
-                    }
-                }
-            }
-        }
-        
-    }
-    .msg {
-           display: flex;
-           align-items: flex-start;
-           border-bottom: 4px solid $brand-yellow;
-           padding-bottom: 3.4rem;
-           .icon {
-            font-size: 1.8rem;
-           }
-           p {
-            width: 100%;
-            max-width: 66rem;
-            font-size: 1.4rem;
-            margin-left: 2.5rem;
-            line-height: 150%;
-            color: #FFFFFF;
-            opacity: 0.8;
-           } 
     }
 }

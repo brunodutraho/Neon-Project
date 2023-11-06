@@ -6,39 +6,91 @@ header {
     height: 8.8rem;
     display: flex;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: $brand-blue;
 
     .container {
         @include flex(row, center, space-between);
+    }
 
-        nav {
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
             display: flex;
             align-items: center;
+            margin-right: 5.9rem;
 
-            ul {
-                display: flex;
-                align-items: center;
-                margin-right: 5.9rem;
+            li {
+                &:not(:first-child) {
+                    margin-left: 4.8rem;
+                }
 
-                li {
-                    &:not(:first-child) {
-                        margin-left: 4.8rem;
+                a {
+                    color: #FFFFFF;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 125%;
+                    transition: color .3s;
+
+                    &:hover {
+                        color: $brand-yellow;
                     }
+                }
+            }
+        }
+    }
 
-                    a {
-                        color: #FFFFFF;
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                        line-height: 125%;
-                        transition: color .3s;
+    .btn-mobile {
+        display: none;
+        margin-left: 4rem;
+    }
 
-                        &:hover {
-                            color: $brand-yellow;
+    @include responsive(1085px) {
+        .container {
+
+
+            nav {
+                ul {
+                    margin-right: 3rem;
+
+                    li {
+                        &:not(:first-child) {
+                            margin-left: 2.5rem;
                         }
                     }
                 }
             }
         }
     }
-}
 
+    @include responsive(991px) {
+
+        nav {
+            ul {
+                display: none;
+            }
+        }
+
+        .btn-mobile {
+            display: block;
+        }
+
+    }
+
+    @include responsive(480px) {
+        height: 7.3rem;
+        a {
+            img {
+                width: 10.8rem;
+                height: 2.4rem;
+            }
+        }
+        nav {
+            .btn-secondary {
+                display: none;
+            }
+        }
+    }
+}
