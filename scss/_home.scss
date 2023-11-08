@@ -1,9 +1,9 @@
 .s-hero {
     width: 100%;
-    max-height: 61.640rem;
+    height: 61.640rem;
     background: url('../img/fundo-s-hero.svg') no-repeat center center;
     padding-top: 17rem;
-    display: none;
+
     .container {
         @include flex (row, flex-start, space-between);
 
@@ -57,7 +57,7 @@
         .area-image {
             width: 100%;
             max-width: 70.6rem;
-            margin-right: -96px;
+            margin-right: -8.6rem;
 
             h2 {
                 margin-bottom: 6.7rem;
@@ -81,17 +81,155 @@
                     top: 4.9rem;
                     left: 0;
                     z-index: 2;
+                    max-width: 43.5rem;
                 }
 
                 .card-back {
                     bottom: -1.4rem;
                     right: 8.6rem;
                     z-index: 1;
+                    max-width: 35.2rem;
                 }
 
                 .circle {
                     top: 0.8rem;
                     right: 4.3rem;
+                    max-width: 65.3rem;
+                }
+            }
+        }
+    }
+
+    @include responsive(1440px) {
+        .container {
+            .area-image {
+                margin-right: -7.0rem;
+            }
+        }
+    }
+
+    @include responsive(1366px) {
+        .container {
+            .area-image {
+                margin-right: -4.0rem;
+
+                .image {
+                    .card-back {
+                        right: 6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(1050px) {
+        padding-top: 14.5rem;
+        height: 48.5rem;
+
+        .container {
+
+            .text {
+                ul {
+                    margin-top: 4.2rem;
+                    padding-bottom: 3rem;
+
+                    li {
+                        .icon {
+                            height: 4.8rem;
+                        }
+                    }
+                }
+            }
+
+            .area-image {
+
+                margin-right: 0;
+
+                h2 {
+                    margin-bottom: 1.5rem;
+                }
+
+                .image {
+                    top: 2.7rem;
+                    height: 43.5rem;
+
+                    .card-front {
+                        top: 7rem;
+                        max-width: 35rem;
+                        left: 0;
+                    }
+
+                    .card-back {
+                        max-width: 29rem;
+                        right: 9rem;
+                        bottom: -3rem;
+                    }
+
+                    .circle {
+                        top: 1.6rem;
+                        max-width: 50rem;
+                        right: 8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(991px) {
+        height: 78.7rem;
+        background-size: cover;
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .text {
+                @include flex(column, center, center);
+                padding-bottom: 2rem;
+                max-width: 68.5rem;
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 2.6rem;
+                }
+
+                h1 {
+                    text-align: center;
+                }
+                ul {
+                    margin-top: 3.9rem;
+                }
+            }
+
+            .area-image {
+
+                h2 {
+                    margin-bottom: 1.9rem;
+                }
+
+                .image {
+                    height: 42.4rem;
+                    max-width: 51.1rem;
+                    top: 0;
+                    margin: 0 auto;
+
+                    .card-front {
+                        max-width: 33rem;
+                        left: -0.5rem;
+                        top: 5rem;
+                    }
+
+                    .card-back {
+                        max-width: 27.4rem;
+                        right: 3.5rem;
+                        bottom: .1rem;
+                    }
+
+                    .circle {
+                        max-width: 45.5rem;
+                        top: 0;
+                        right: 2rem;
+                    }
                 }
             }
         }
