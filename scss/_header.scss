@@ -6,7 +6,6 @@ header {
     height: 8.8rem;
     display: flex;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    background-color: $brand-blue;
 
     .container {
         @include flex(row, center, space-between);
