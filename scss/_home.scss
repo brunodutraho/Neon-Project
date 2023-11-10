@@ -196,6 +196,7 @@
                 h1 {
                     text-align: center;
                 }
+
                 ul {
                     margin-top: 3.9rem;
                 }
@@ -246,18 +247,22 @@
                 h3 {
                     margin-bottom: 1.5rem;
                 }
+
                 h1 {
                     margin-bottom: 3.7rem;
                 }
+
                 ul {
                     max-width: 27.2rem;
                     flex-direction: column;
                     align-items: flex-start;
                     margin-top: 3.7rem;
+
                     li {
                         &:not(:last-child) {
                             margin-bottom: 1.7rem;
                         }
+
                         .icon {
                             width: 2rem;
                             height: auto;
@@ -271,6 +276,7 @@
                 h2 {
                     display: none;
                 }
+
                 .image {
                     max-width: 30.5rem;
                     height: 24.8rem;
@@ -279,11 +285,13 @@
                         max-width: 21.1rem;
                         top: 2.9rem;
                     }
+
                     .card-back {
                         max-width: 17rem;
                         bottom: 0;
                         right: 0.6rem;
                     }
+
                     .circle {
                         max-width: 26.7rem;
                         right: 0;
@@ -296,7 +304,6 @@
 
 .s-card-neon {
     padding-top: 12.9rem;
-    display: none;
 
     .container {
         @include flex(row, flex-start, space-between);
@@ -311,6 +318,10 @@
                 width: 100%;
                 max-width: 27.7rem;
                 margin-bottom: 13rem;
+
+                .phone-mockup {
+                    max-width: 27.7rem;
+                }
 
                 .circle-mockup {
                     position: absolute;
@@ -491,7 +502,92 @@
 
         }
     }
+
+    @include responsive(1200px) {
+
+        .container {
+            max-width: 108rem;
+
+            .left-area {
+                max-width: 27.7rem;
+
+                .ilustra-mockup {
+
+                    .circle-mockup {
+                        display: none;
+                    }
+                }
+            }
+
+            .right-area {
+                max-width: 76rem;
+
+                .main-area {
+                    ul {
+                        .info {
+                            .text {
+                                margin-left: 3.2rem;
+                            }
+                        }
+                    }
+                }
+
+
+                .box-card {
+                    .text {
+                        margin-left: 3.2rem;
+                    }
+
+                    .image {
+                        margin-right: -1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(991px) {
+        
+        .container {
+            max-width: 84rem;
+            flex-direction: column-reverse;
+
+            .right-area {
+                max-width: 100%;
+
+                .main-area {
+                    margin-bottom: 5.7rem;
+                    h2 {
+                        text-align: center;
+                        margin: 0 auto;
+                        margin-bottom: 5.3rem;
+                        font-size: 3.6rem;
+                    }
+                    ul {
+                        max-width: 94%;
+                    }
+                    .btn {
+                        display: block;
+                        text-align: center;
+                        &::after {
+                            right: 30.2rem;
+                        }
+                    }
+                }
+                .box-card {
+                    max-width: 94%;
+                    margin-bottom: 9.3rem;
+                    .text {
+                        margin-left: 5.3rem;
+                    }
+                    .image {
+                        margin-right: -1.8rem;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 .s-depoimentos {
     padding-top: 13.4rem;
