@@ -236,6 +236,16 @@
         }
     }
 
+    @include responsive(768) {
+        .container {
+            .text {
+                h1 {
+                    max-width: 64rem;
+                }
+            }
+        }
+    }
+
     @include responsive(480px) {
         height: 59.7rem;
         padding-top: 12.2rem;
@@ -506,7 +516,8 @@
     @include responsive(1200px) {
 
         .container {
-            max-width: 108rem;
+            width: 100%;
+            max-width: 110rem;
 
             .left-area {
                 max-width: 27.7rem;
@@ -545,44 +556,112 @@
             }
         }
     }
+
     @include responsive(991px) {
-        
+
         .container {
-            max-width: 84rem;
+            width: 100%;
+            max-width: 98rem;
             flex-direction: column-reverse;
 
             .right-area {
-                max-width: 100%;
-
+                width: 94%;
+                margin-bottom: 9.3rem;
                 .main-area {
                     margin-bottom: 5.7rem;
+
                     h2 {
                         text-align: center;
                         margin: 0 auto;
                         margin-bottom: 5.3rem;
                         font-size: 3.6rem;
                     }
+
                     ul {
-                        max-width: 94%;
+                        max-width: 98%;
                     }
+
                     .btn {
                         display: block;
                         text-align: center;
+
                         &::after {
                             right: 30.2rem;
                         }
                     }
                 }
+
                 .box-card {
-                    max-width: 94%;
+                    width: 100%;
+                    max-width: 70.8rem;
                     margin-bottom: 9.3rem;
+
                     .text {
-                        margin-left: 5.3rem;
+                        margin-left: 3.3rem;
                     }
+
                     .image {
-                        margin-right: -1.8rem;
+                        margin-right: -3.2rem;
                     }
                 }
+            }
+
+            .left-area {
+                display: flex;
+                width: 98%;
+                max-width: 60rem;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 auto;
+
+                .ilustra-mockup {
+                    max-width: 27.5rem;
+                    margin-bottom: 0;
+                }
+
+                .text {
+                    max-width: 27rem;
+                }
+            }
+        }
+    }
+
+    @include responsive(768px) {
+
+        .container {
+
+            .right-area {
+                .box-card {
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 47rem;
+                    margin-bottom: 9.2rem;
+                    background-size: cover;
+                    flex-direction: column;
+
+                    .text {
+                        margin: 0 auto;
+                        margin-top: 4.3rem;
+                        margin-bottom: 5rem;
+                        text-align: center;
+
+                        h3 {
+                            max-width: 43rem;
+                        }
+
+                        .btns {
+                            justify-content: center;
+                        }
+                    }
+
+                    .image {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .left-area {
+                width: 100%;
+                max-width: 57.5rem;
             }
         }
     }
