@@ -566,7 +566,9 @@
 
             .right-area {
                 width: 94%;
+                margin: 0 auto;
                 margin-bottom: 9.3rem;
+
                 .main-area {
                     margin-bottom: 5.7rem;
 
@@ -586,7 +588,7 @@
                         text-align: center;
 
                         &::after {
-                            right: 30.2rem;
+                            display: none;
                         }
                     }
                 }
@@ -635,7 +637,7 @@
                     margin: 0 auto;
                     width: 100%;
                     height: 47rem;
-                    margin-bottom: 9.2rem;
+                    margin-bottom: 21.2rem;
                     background-size: cover;
                     flex-direction: column;
 
@@ -659,12 +661,113 @@
                     }
                 }
             }
+
             .left-area {
                 width: 100%;
                 max-width: 57.5rem;
             }
         }
     }
+
+    @include responsive(630px) {
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 21.4rem;
+            top: 219.5rem;
+            background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+        }
+        .container {
+
+            margin-top: 2rem;
+
+            .right-area {
+                margin: 0;
+                margin-bottom: 12.5rem;
+                .main-area {
+                    h2 {
+                        max-width: 31.6rem;
+                        font-size: 2.8rem;
+                    }
+
+                    ul {
+                        margin-left: 1rem;
+                        margin-bottom: 4rem;
+                        max-width: 94%;
+
+                        li {
+                            .info {
+                                align-items: flex-start;
+
+                                .text {
+                                    max-width: 71%;
+                                    margin-left: 2.3rem;
+
+                                    h3 {
+                                        font-size: 2rem;
+                                        margin-bottom: 0.7rem;
+                                    }
+
+                                    p {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .box-card {
+                    max-width: 98%;
+                    height: 47rem;
+                    margin: 0;
+
+                    .text {
+                        max-width: 28.1rem;
+                        h2 {
+                            font-size: 2.8rem;
+                        }
+                        h3 {
+                            font-size: 2rem;
+                        }
+                        p {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .image {
+                        max-width: 27.7rem;
+                    }
+                }
+            }
+
+            .left-area {
+                flex-direction: column-reverse;
+
+                .text {
+                    margin-bottom: 4rem;
+                    .icon {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+
+                .ilustra-mockup {
+                    height: 50.2rem;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
+    
 }
 
 
