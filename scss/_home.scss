@@ -671,11 +671,12 @@
 
     @include responsive(630px) {
         position: relative;
+
         &::after {
             content: "";
             width: 100%;
-            height: 21.4rem;
-            top: 219.5rem;
+            height: 24.4rem;
+            top: 205.5rem;
             background: linear-gradient(180deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
             position: absolute;
             z-index: -1;
@@ -683,6 +684,7 @@
             left: 0;
             transform: matrix(1, 0, 0, -1, 0, 0);
         }
+
         .container {
 
             margin-top: 2rem;
@@ -690,6 +692,7 @@
             .right-area {
                 margin: 0;
                 margin-bottom: 12.5rem;
+
                 .main-area {
                     h2 {
                         max-width: 31.6rem;
@@ -723,6 +726,7 @@
                         }
                     }
                 }
+
                 .box-card {
                     max-width: 98%;
                     height: 47rem;
@@ -730,12 +734,15 @@
 
                     .text {
                         max-width: 28.1rem;
+
                         h2 {
                             font-size: 2.8rem;
                         }
+
                         h3 {
                             font-size: 2rem;
                         }
+
                         p {
                             font-size: 1.6rem;
                         }
@@ -752,6 +759,7 @@
 
                 .text {
                     margin-bottom: 4rem;
+
                     .icon {
                         &::before {
                             display: none;
@@ -767,7 +775,7 @@
         }
     }
 
-    
+
 }
 
 
@@ -818,10 +826,35 @@
             flex-direction: column;
             align-items: center;
             margin-bottom: 5.1rem;
+
             h2 {
                 text-align: center;
                 margin-bottom: 5.1rem;
             }
+        }
+    }
+
+    @include responsive(480px) {
+        padding-top: 7.4rem;
+        .container {
+            padding: 0;
+        }
+        .top {
+            h2 {
+                width: 80%;
+                font-size: 2.8rem;
+                font-weight: 600;
+                margin-bottom: 3.1rem;
+
+                span {
+                    font-size: 2.4rem;
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
+
+        .slide-depoimentos {
+            padding: 0px 2rem;
         }
     }
 }

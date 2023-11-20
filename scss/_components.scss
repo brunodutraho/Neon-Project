@@ -1,5 +1,5 @@
 .card-depoimentos {
-    width: 100%;
+    width: 84%;
     max-width: 324.667px;
     height: 12.9rem;
     background-color: rgba(241, 240, 245, 0.55);
@@ -9,6 +9,10 @@
     .user {
         @include flex(row, center, space-between);
         padding-bottom: 1.3125rem;
+
+        img {
+            margin-right: 2.5rem;
+        }
 
         strong {
             color: $grey-500;
@@ -21,11 +25,15 @@
     }
 
     P {
-        width: 32.2rem;
+        width: 92%;
         color: $grey-400;
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 150%;
         padding-right: 2rem;
+    }
+
+    @include responsive(480px) {
+        height: 25.3rem;
     }
 }
