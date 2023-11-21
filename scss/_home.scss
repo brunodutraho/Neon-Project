@@ -836,9 +836,11 @@
 
     @include responsive(480px) {
         padding-top: 7.4rem;
+
         .container {
             padding: 0;
         }
+
         .top {
             h2 {
                 width: 80%;
@@ -862,7 +864,6 @@
 .s-conta-digital {
     padding-top: 12.7rem;
     padding-bottom: 18.5rem;
-    display: none;
 
     .container {
         display: flex;
@@ -921,7 +922,7 @@
             width: 100%;
             max-width: 71.2rem;
             height: 59.8rem;
-            left: 13.9rem;
+            left: 7.9rem;
 
             img {
                 position: absolute;
@@ -938,8 +939,44 @@
 
                 &.image-digital-02 {
                     top: 0;
-                    right: 23.8rem;
+                    right: 20rem;
                 }
+            }
+        }
+    }
+
+    @include responsive(1200px) {
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+            .text {
+                max-width: 68%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    max-width: 74%;
+                    text-align: center;
+                }
+            }
+
+            .image {
+                margin-right: 0;
+                left: 0;
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    @include responsive(900px) {
+        padding-top: 8.6rem;
+        padding-bottom: 8.1rem;
+
+        .container {
+            .text {
+                max-width: 100%;
             }
         }
     }
