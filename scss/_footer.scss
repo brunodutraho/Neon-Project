@@ -168,6 +168,7 @@ footer {
         }
 
         .msg {
+            width: 95%;
             flex-direction: column;
             align-items: center;
 
@@ -191,6 +192,51 @@ footer {
 
                     .info {
                         margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(480px) {
+        .top {
+            flex-direction: column;
+            align-items: center;
+
+            .share {
+                flex-direction: column;
+                margin-top: 3.2rem;
+
+                ul {
+                    margin-left: 0;
+                    margin-top: 2rem; 
+                }
+            }
+        }
+
+        .main {
+            nav {
+                .item {
+                    width: 50%;
+                    margin-bottom: 5.3rem;
+                }
+            }
+
+            .btns {
+                bottom: 0;
+                position: relative;
+                max-width: 95.5%;
+
+                button {
+                    padding-left: 0;
+                    justify-content: center;
+
+                    .info {
+                        strong,
+                        span {
+                            display: block;
+                            text-align: center;
+                        }
                     }
                 }
             }
