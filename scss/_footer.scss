@@ -1,7 +1,10 @@
 footer {
     background-color: $brand-blue;
     padding-top: 4.9rem;
-    display: none;
+
+    .container {
+        width: 96%
+    }
 
     .top {
         @include flex(row, center, space-between);
@@ -44,6 +47,7 @@ footer {
             @include flex(row, flex-start, space-between);
             width: 100%;
             max-width: 86rem;
+            margin-right: 2rem;
 
             .item {
                 strong {
@@ -133,6 +137,63 @@ footer {
             line-height: 150%;
             color: #FFFFFF;
             opacity: 0.8;
+        }
+    }
+
+    @include responsive(991px) {
+        .main {
+            width: 100%;
+            position: relative;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 3.6rem;
+
+            nav {
+                margin-right: 0;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                .item {
+                    width: 33%;
+                    margin-bottom: 5rem;
+                }
+            }
+
+            .btns {
+                position: absolute;
+                right: 0;
+                bottom: 11.2rem;
+            }
+        }
+
+        .msg {
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin-left: 0;
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @include responsive(600px) {
+        .main {
+            margin-bottom: 3rem;
+            .btns {
+                max-width: 25rem;
+                button {
+                    img {
+                        display: none;
+                    }
+
+                    .info {
+                        margin-left: 0;
+                    }
+                }
+            }
         }
     }
 }
