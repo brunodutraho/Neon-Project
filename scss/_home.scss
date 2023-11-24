@@ -930,16 +930,19 @@
                 &.circle-digital {
                     bottom: 0;
                     right: 0;
+                    z-index: 0;
                 }
 
                 &.image-digital-01 {
                     left: 0;
                     bottom: 5.5rem;
+                    z-index: 2;
                 }
 
                 &.image-digital-02 {
                     top: 0;
                     right: 20rem;
+                    z-index: 2;
                 }
             }
         }
