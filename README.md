@@ -30,3 +30,7 @@
 <p>Este projeto foi desenvolvido como parte de um estudo de design e desenvolvimento front-end. Ele utiliza técnicas modernas de CSS, como mixins e variáveis SASS, para criar uma experiência visual atraente e responsiva.</p>
 
 <p>Esperamos que você goste! 😊</p>
+
+<div align="center">
+  <img height="550" src="https://i.postimg.cc/sfqNc3vn/neon.png"  />
+</div>
